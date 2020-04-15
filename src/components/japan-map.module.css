@@ -1,0 +1,29 @@
+.japan svg {
+  stroke: #2d3748;
+}
+
+.japan svg path {
+  /* cursor: pointer; */
+  outline: none;
+  fill: #718096;
+}
+
+.japan svg path[data-severity="one"] {
+  fill: #e53e3e;
+}
+
+.japan svg path[data-severity="two"] {
+  fill: #fc8181;
+}
+
+.japan svg path[data-severity="three"] {
+  fill: #f6ad55;
+}
+
+.japan svg path[data-severity="four"] {
+  fill: #fbd38d;
+}
+
+.japan svg path[data-severity="five"] {
+  fill: #feebc8;
+}
