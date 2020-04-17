@@ -1,6 +1,7 @@
 {
   "name": "test",
   "version": "0.1.0",
+  "homepage": "https://tkmi.dev/japan-covid-19-status",
   "private": true,
   "dependencies": {
     "@south-paw/react-vector-maps": "^3.0.0",
