@@ -2,6 +2,19 @@
   stroke: #2d3748;
 }
 
+@media (min-width: 1024px) and (max-width: 1279px) { 
+  .japan svg {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .japan svg {
+    height: 600px;
+  }
+}
+
+
 .japan svg path {
   /* cursor: pointer; */
   outline: none;
