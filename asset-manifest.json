@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/japan-covid-19-status/static/css/main.5e9dc013.chunk.css",
+    "main.js": "/japan-covid-19-status/static/js/main.87a787d8.chunk.js",
+    "main.js.map": "/japan-covid-19-status/static/js/main.87a787d8.chunk.js.map",
+    "runtime-main.js": "/japan-covid-19-status/static/js/runtime-main.779697e9.js",
+    "runtime-main.js.map": "/japan-covid-19-status/static/js/runtime-main.779697e9.js.map",
+    "static/js/2.1d611038.chunk.js": "/japan-covid-19-status/static/js/2.1d611038.chunk.js",
+    "static/js/2.1d611038.chunk.js.map": "/japan-covid-19-status/static/js/2.1d611038.chunk.js.map",
+    "index.html": "/japan-covid-19-status/index.html",
+    "precache-manifest.291884493de9a3533cd14e75d9f2cc9b.js": "/japan-covid-19-status/precache-manifest.291884493de9a3533cd14e75d9f2cc9b.js",
+    "service-worker.js": "/japan-covid-19-status/service-worker.js",
+    "static/css/main.5e9dc013.chunk.css.map": "/japan-covid-19-status/static/css/main.5e9dc013.chunk.css.map",
+    "static/js/2.1d611038.chunk.js.LICENSE.txt": "/japan-covid-19-status/static/js/2.1d611038.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.779697e9.js",
+    "static/js/2.1d611038.chunk.js",
+    "static/css/main.5e9dc013.chunk.css",
+    "static/js/main.87a787d8.chunk.js"
+  ]
+}
