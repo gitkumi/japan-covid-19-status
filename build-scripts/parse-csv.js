@@ -9,7 +9,11 @@ const prefectures2 = []
 const PREFECTURES = require('../src/constants/prefectures.json')
 
 function getPrefectureEnglishName(string) {
-  return PREFECTURES.find(p => p.ja === string).en
+  const prefecture = PREFECTURES.find(p => p.ja === string)
+
+  if (prefecture && prefecture.en) {
+    return prefecture.en
+  }
 }
 
 function getGenerationEnglishName(string) {
@@ -74,10 +78,13 @@ fse.createReadStream('./raw-data/demography.csv')
 fse.createReadStream('./raw-data/prefectures.csv')
   .pipe(csv())
   .on('data', (data) => {
+    const prefectureName = getPrefectureEnglishName(data['都道府県'])
+    if (!prefectureName) return
+
     const newEntry = {
       date: `${data['年']}/${data['月']}/${data['日']}`,
       data: {
-        prefecture: getPrefectureEnglishName(data['都道府県']),
+        prefecture: prefectureName,
         cases: data['患者数（2020年3月28日からは感染者数）'],
         active: data['現在は入院等'],
         recovered: data['退院者'],
@@ -97,10 +104,13 @@ fse.createReadStream('./raw-data/prefectures.csv')
 fse.createReadStream('./raw-data/prefectures-2.csv')
   .pipe(csv())
   .on('data', (data) => {
+    const prefectureName = getPrefectureEnglishName(data['都道府県'])
+    if (!prefectureName) return
+
     const newEntry = {
       date: `${data['年']}/${data['月']}/${data['日']}`,
       data: {
-        prefecture: getPrefectureEnglishName(data['都道府県']),
+        prefecture: prefectureName,
         tested: data['PCR検査人数'],
         tested_positive: data['PCR検査陽性者数']
       }
