@@ -9,11 +9,13 @@ const prefectures2 = []
 const PREFECTURES = require('../src/constants/prefectures.json')
 
 function getPrefectureEnglishName(string) {
-  const prefecture = PREFECTURES.find(p => p.ja === string)
+  const prefecture = PREFECTURES.find(p => p.ja.includes(string))
 
   if (prefecture && prefecture.en) {
     return prefecture.en
   }
+
+  console.log('Prefecture not found: ', string)
 }
 
 function getGenerationEnglishName(string) {

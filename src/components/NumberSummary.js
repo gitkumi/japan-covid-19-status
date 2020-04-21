@@ -21,7 +21,7 @@ function NumberSummary({ summary, cases }) {
       </span>
       <div>
         <span className={`tracking-tighter text-2xl lg:text-3xl ${getColor(summary.key)}`}>{formatNumber(summary.value)}</span>
-        {percentage != 100 ? <span className={`ml-2 text-sm font-medium ${getColor(summary.key)}`}>({getPercentage(cases, summary.value)}%)</span> : null} 
+        {percentage !== 100 ? <span className={`ml-2 text-sm font-medium ${getColor(summary.key)}`}>({getPercentage(cases, summary.value)}%)</span> : null} 
       </div>
     </article>
   )
