@@ -5,6 +5,7 @@ import DemographyView from 'views/DemographyView'
 import TestedView from 'views/TestedView'
 import PrefectureView from 'views/PrefectureView'
 import MapView from 'views/MapView'
+import SymptomsView from 'views/SymptomsView'
 
 function Home() {
   return (
@@ -29,6 +30,14 @@ function Home() {
           </div>
           <div className="w-100 lg:w-1/2">
             <TestedView />
+          </div>
+        </div>
+
+        <div className="mb-6 flex flex-col lg:flex-row">
+          <div className="w-100 lg:w-1/2 lg:mr-12">
+            <SymptomsView />
+          </div>
+          <div className="w-100 lg:w-1/2">
           </div>
         </div>
 

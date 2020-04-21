@@ -1,8 +1,8 @@
 import React from 'react'
 import Chart from 'chart.js'
-import { testedChartOptions } from 'constants/chart-options'
+import { symptomsChartOptions } from 'constants/chart-options'
 
-function TestedChart({ tested }) {
+function SummaryChart({ symptoms }) {
   const chartRef = React.useRef(null)
 
   React.useEffect(() => {
@@ -11,23 +11,23 @@ function TestedChart({ tested }) {
     new Chart(contextRef, {
       type: 'bar',
       data: {
-        labels: tested.map(t => t.date),
+        labels: [...symptoms.map(s => s.label)],
         datasets: [
           {
-            label: 'Tested',
+            label: 'Asymptomatic',
             backgroundColor: 'rgba(226, 232, 240, 1)',
             borderColor: 'rgba(226, 232, 240, 1)',
-            data: tested.map(t => t.tested),
+            data: symptoms.map(s => s.asymptomatic),
           },
           {
-            label: 'Positive',
+            label: 'Symptomatic',
             backgroundColor: 'rgba(254, 215, 215, 1)',
             borderColor: 'rgba(254, 215, 215, 1)',
-            data: tested.map(t => t.testedPositive),
-          },
+            data: symptoms.map(s => s.symptomatic),
+          }
         ],
       },
-      options: testedChartOptions,
+      options: symptomsChartOptions,
     })
   })
 
@@ -38,4 +38,4 @@ function TestedChart({ tested }) {
   )
 }
 
-export default TestedChart
+export default SummaryChart
