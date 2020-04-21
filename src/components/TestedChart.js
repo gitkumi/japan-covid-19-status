@@ -2,9 +2,10 @@ import React from 'react'
 import Chart from 'chart.js'
 import { testedChartOptions } from 'constants/chart-options'
 
-function TestedChart({ tested }) {
+function TestedChart({ tested, cases }) {
   const labels = tested.map(t => t.date)
-  const data = tested.map(t => t.tested)
+  const testedData = tested.map(t => t.tested)
+  const casesData = cases.map(t => t.cases)
 
   const chartRef = React.useRef(null)
 
@@ -12,18 +13,27 @@ function TestedChart({ tested }) {
     const contextRef = chartRef.current.getContext('2d')
 
     new Chart(contextRef, {
-      type: 'line',
+      type: 'bar',
       data: {
         labels: labels,
         datasets: [
           {
-            label: 'PCR Tested',
-            backgroundColor: 'rgba(254, 215, 215, 0.8)',
-            borderColor: 'rgba(254, 215, 215, 1)',
+            label: 'Positive',
+            backgroundColor: 'rgba(246, 173, 85, 0.8)',
+            borderColor: 'rgba(246, 173, 85, 1)',
             pointRadius: 1,
             hitRadius: 5,
-            data: data,
-          }
+            data: casesData,
+          },
+          {
+            label: 'PCR Tested',
+            backgroundColor: 'rgba(226, 232, 240, 0.8)',
+            borderColor: 'rgba(226, 232, 240, 1)',
+            pointRadius: 1,
+            hitRadius: 5,
+            data: testedData,
+          },
+
         ],
       },
       options: testedChartOptions,

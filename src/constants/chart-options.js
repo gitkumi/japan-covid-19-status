@@ -67,9 +67,9 @@ export const prefectureChartOptions = {
     callbacks: {
       label: (tooltipItem) => {
         const categories = new Map()
-          .set(0, 'active')
-          .set(1, 'recovered')
-          .set(2, 'deaths')
+          .set(0, 'Active')
+          .set(1, 'Recovered')
+          .set(2, 'Deaths')
 
         const category = categories.get(tooltipItem.datasetIndex)
         return `${category}: ${formatNumber(tooltipItem.value)}`
@@ -116,9 +116,9 @@ export const demographyChartOptions = {
     callbacks: {
       label: (tooltipItem) => {
         const categories = new Map()
-          .set(0, 'infected')
-          .set(1, 'serious')
-          .set(2, 'deaths')
+          .set(0, 'Infected')
+          .set(1, 'Serious')
+          .set(2, 'Deaths')
 
         const category = categories.get(tooltipItem.datasetIndex)
         return `${category}: ${formatNumber(tooltipItem.value)}`
@@ -163,16 +163,13 @@ export const testedChartOptions = {
     intersect: false,
     itemSort: (arr) => arr,
     callbacks: {
-      label: (item)=> {
-      //   const categories = new Map()
-      //   .set(0, 'active')
-      //   .set(1, 'recovered')
-      //   .set(2, 'deaths')
+      label: (tooltipItem)=> {
+      const categories = new Map()
+        .set(0, 'Positive')
+        .set(1, 'Tested')
 
-      // const category = categories.get(tooltipItem.datasetIndex)
-      // return `${category}: ${formatNumber(tooltipItem.value)}`
-
-        return `PCR Tested: ${formatNumber(item.value)}`
+      const category = categories.get(tooltipItem.datasetIndex)
+      return `${category}: ${formatNumber(tooltipItem.value)}`
       }
     }
   },
@@ -213,7 +210,6 @@ export const testedChartOptions = {
           callback: value => formatNumber(value),
           fontColor: '#a0aec0'
         },
-        stacked: true,
       },
     ],
   },
