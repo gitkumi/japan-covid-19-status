@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab98573e402314bca65cb8b529132d75",
+    "revision": "0b0a038ad60d5579e12e397d817df59c",
     "url": "/japan-covid-19-status/index.html"
   },
   {
-    "revision": "1a0fe674c96a4160f9dc",
+    "revision": "4cfa4f7c8c62db98ee9c",
     "url": "/japan-covid-19-status/static/css/main.5ca456a6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/japan-covid-19-status/static/js/2.1d611038.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a0fe674c96a4160f9dc",
-    "url": "/japan-covid-19-status/static/js/main.719388a6.chunk.js"
+    "revision": "4cfa4f7c8c62db98ee9c",
+    "url": "/japan-covid-19-status/static/js/main.52781cc3.chunk.js"
   },
   {
     "revision": "3c713de05d3d907611bf",
