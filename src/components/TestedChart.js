@@ -19,15 +19,15 @@ function TestedChart({ tested, cases }) {
         datasets: [
           {
             label: 'Positive',
-            backgroundColor: 'rgba(246, 173, 85, 0.8)',
-            borderColor: 'rgba(246, 173, 85, 1)',
+            backgroundColor: 'rgba(254, 215, 215, 1)',
+            borderColor: 'rgba(254, 215, 215, 1)',
             pointRadius: 1,
             hitRadius: 5,
             data: casesData,
           },
           {
             label: 'PCR Tested',
-            backgroundColor: 'rgba(226, 232, 240, 0.8)',
+            backgroundColor: 'rgba(226, 232, 240, 1)',
             borderColor: 'rgba(226, 232, 240, 1)',
             pointRadius: 1,
             hitRadius: 5,

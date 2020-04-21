@@ -19,18 +19,18 @@ function PrefectureChart({ prefecture }) {
         labels: chartLabels,
         datasets: [
           {
-            label: 'active',
-            backgroundColor: 'rgba(254, 215, 215, 0.9)',
+            label: 'Active',
+            backgroundColor: 'rgba(251, 211, 141, 1)',
             data: active,
           },
           {
-            label: 'recovered',
-            backgroundColor: 'rgba(154, 230, 180, 0.9)',
+            label: 'Recovered',
+            backgroundColor: 'rgba(154, 230, 180, 1)',
             data: recovered,
           },
           {
-            label: 'deaths',
-            backgroundColor: 'rgba(245, 101, 101, 0.9)',
+            label: 'Deaths',
+            backgroundColor: 'rgba(245, 101, 101, 1)',
             data: deaths,
           },
         ],

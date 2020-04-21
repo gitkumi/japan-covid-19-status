@@ -2,8 +2,8 @@ import React from 'react'
 import { getPercentage, formatNumber } from 'utils/helpers'
 
 const SUMMARY_COLORS = new Map()
-  .set('cases', 'text-orange-300')
-  .set('active', 'text-red-200')
+  .set('cases', 'text-red-200')
+  .set('active', 'text-orange-300')
   .set('recovered', 'text-green-300')
   .set('deaths', 'text-red-500')
 

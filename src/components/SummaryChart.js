@@ -19,7 +19,7 @@ function SummaryChart({ timeline }) {
         datasets: [
           {
             label: 'Deaths',
-            backgroundColor: 'rgba(245, 101, 101, 0.8)',
+            backgroundColor: 'rgba(245, 101, 101, 1)',
             borderColor: 'rgba(245, 101, 101, 1)',
             pointRadius: 1,
             hitRadius: 5,
@@ -27,7 +27,7 @@ function SummaryChart({ timeline }) {
           },
           {
             label: 'Recovered',
-            backgroundColor: 'rgba(154, 230, 180, 0.8)',
+            backgroundColor: 'rgba(154, 230, 180, 1)',
             borderColor: 'rgba(154, 230, 180, 1)',
             pointRadius: 1,
             hitRadius: 5,
@@ -35,8 +35,8 @@ function SummaryChart({ timeline }) {
           },
           {
             label: 'Active',
-            backgroundColor: 'rgba(254, 215, 215, 0.8)',
-            borderColor: 'rgba(254, 215, 215, 1)',
+            backgroundColor: 'rgba(251, 211, 141, 1)',
+            borderColor: 'rgba(251, 211, 141, 1)',
             pointRadius: 1,
             hitRadius: 5,
             data: japanActive.map(t => t.value),

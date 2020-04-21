@@ -21,17 +21,17 @@ function DemographyChart({ demography }) {
         datasets: [
           {
             label: 'infected',
-            backgroundColor: 'rgba(254, 215, 215, 0.9)',
+            backgroundColor: 'rgba(254, 215, 215, 1)',
             data: infected,
           },
           {
             label: 'serious',
-            backgroundColor: 'rgba(252, 129, 129, 0.9)',
+            backgroundColor: 'rgba(252, 129, 129, 1)',
             data: serious,
           },
           {
             label: 'deaths',
-            backgroundColor: 'rgba(229, 62, 62, 0.9)',
+            backgroundColor: 'rgba(229, 62, 62, 1)',
             data: deaths,
           },
         ],
