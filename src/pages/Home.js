@@ -8,10 +8,11 @@ import PrefectureView from 'views/PrefectureView'
 import MapView from 'views/MapView'
 import SymptomsView from 'views/SymptomsView'
 import TimelineView from 'views/TimelineView'
+import ThanksView from 'views/ThanksView'
 
 function Home() {
   return (
-    <main className="bg-gray-800 text-gray-200 text-lg">
+    <main className="bg-gray-800 text-gray-400 text-lg">
       <MetaTags>
         <title>Japan COVID-19 Status</title>
         <meta name="description" content="Japan COVID-19 Status" />
@@ -19,7 +20,7 @@ function Home() {
       </MetaTags>
 
       <div className="container mx-auto p-4">
-        <h1 className="font-medium text-3xl mb-6 text-center">Japan COVID-19 Status</h1>
+        <h1 className="font-medium text-gray-200 text-3xl mb-6 text-center">Japan COVID-19 Status</h1>
         <TitleView />
 
         <div className="mb-6 flex flex-col lg:flex-row">
@@ -51,6 +52,7 @@ function Home() {
             <SymptomsView />
           </div>
           <div className="w-100 lg:w-1/2">
+            <ThanksView />
           </div>
         </div>
 
