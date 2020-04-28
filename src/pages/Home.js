@@ -23,11 +23,11 @@ function Home() {
         <TitleView />
 
         <div className="mb-6 flex flex-col lg:flex-row">
-          <div className="w-100 lg:w-1/2 lg:mr-24">
+          <div className="w-100 lg:w-3/5 lg:mr-24">
             <SummaryView />
             <PrefectureView />
           </div>
-          <div className="w-100 lg:w-1/2">
+          <div className="w-100 lg:w-2/5">
             <MapView />
           </div>
         </div>

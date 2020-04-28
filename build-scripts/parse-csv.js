@@ -42,9 +42,9 @@ fse.createReadStream('./raw-data/summary.csv')
       data: {
         cases: data['PCR検査陽性者'],
         cases_with_symptoms: data['有症状者'],
-        recovered: data['退院した者'],
+        recovered: data['退院者'],
         serious: data['人工呼吸器又は集中治療室に入院している者'],
-        active: data['PCR検査陽性者'] - data['退院した者'] - data['人工呼吸器又は集中治療室に入院している者'],
+        active: data['PCR検査陽性者'] - data['退院者'] - data['人工呼吸器又は集中治療室に入院している者'],
         deaths: data['死亡者'],
         tested: data['PCR検査実施人数'],
       }
