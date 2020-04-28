@@ -168,9 +168,60 @@
     ]
   },
   {
+    "date": "2020/4/8",
+    "events": [
+      "Tokyo reports 144 new cases, the highest daily total to date for the metropolis. The figure previously topped 100 on April 4 and 5 before falling below it for the next two days."
+    ]
+  },
+  {
+    "date": "2020/4/9",
+    "events": [
+      "Tokyo reports a record 181 new cases, with the rate of increase rising by almost 40 from April 8."
+    ]
+  },
+  {
+    "date": "2020/4/10",
+    "events": [
+      "Tokyo reports 189 new cases, the highest single-day total to date, bringing the overall number of infections to 1,705.",
+      "The metropolis is aiming to slow down the spread of COVID-19 by requesting closure of bars and nightclubs, as well as shorter opening hours for izakaya and restaurants."
+    ]
+  },
+  {
+    "date": "2020/4/11",
+    "events": [
+      "Tokyo reports 197 new cases, setting a record high total for the fourth consecutive day, bringing the overall figure to 1,902."
+    ]
+  },
+  {
+    "date": "2020/4/12",
+    "events": [
+      "Tokyo reports 166 new cases. Governor Koike says in a YouTube video that it was unclear how infection occurred in 64 cases, but it was believed that 87 cases were due to transmission within medical facilities."
+    ]
+  },
+  {
+    "date": "2020/4/13",
+    "events": [
+      "Tokyo reports 91 new cases, bringing its total to 2,159."
+    ]
+  },
+  {
+    "date": "2020/4/14",
+    "events": [
+      "The government decides to postpone the ceremonial investiture of Crown Prince Fumihito as first in line to the Japanese throne.",
+      "It had planned to hold scaled-down ceremonies on April 19, but these will now take place at a later date."
+    ]
+  },
+  {
     "date": "2020/4/16",
     "events": [
-      "The government announces that the state of emergency will be extended from the initial seven heavily urban prefectures to the whole country, due to the increasingly rapid rise in cases and some other prefectures having recorded more than 100 infections. Prime Minster Abe Shinzō announces that the government is planning to give ¥100,000 in cash per person as part of economic measures responding to the coronavirus outbreak, which will be included in a revision of the supplementary budget for fiscal 2020. This replaces the plan for payments of ¥300,000 to households suffering serious drops in income."
+      "The government announces that the state of emergency will be extended from the initial seven heavily urban prefectures to the whole country, due to the increasingly rapid rise in cases and some other prefectures having recorded more than 100 infections.",
+      "Prime Minster Abe Shinzō announces that the government is planning to give ¥100,000 in cash per person as part of economic measures responding to the coronavirus outbreak, which will be included in a revision of the supplementary budget for fiscal 2020. This replaces the plan for payments of ¥300,000 to households suffering serious drops in income."
+    ]
+  },
+  {
+    "date": "2020/4/17",
+    "events": [
+      "Tokyo reports 201 new cases, bringing its total to 2,794. It is the first time that the metropolis has registered more than 200 new cases in one day."
     ]
   },
   {
@@ -184,6 +235,32 @@
     "date": "2020/4/20",
     "events": [
       "McDonald's Japan closes dining areas at all its restaurants in 13 prefectures designated by the government for stepped-up measures against COVID-19. The areas will remain closed until May 6."
+    ]
+  },
+  {
+    "date": "2020/4/22",
+    "events": [
+      "After weekends when the Shōnan coast has seen major traffic congestion, including vehicles from other prefectures, Kanagawa Governor Kuroiwa Yūji urges people not to visit at a time when they should be staying indoors. ", 
+      "Other coastal areas like Kujūkuri Beach in Chiba Prefecture have faced the same issue, and local governments are alarmed at the prospect of visitors bringing the virus with them during the upcoming Golden Week holidays."
+    ]
+  },
+  {
+    "date": "2020/4/23",
+    "events": [
+      "Tokyo Governor Koike Yuriko calls the period from April 25 to May 6, including the Golden Week holidays when travel is usually popular, \"Stay Home Week to Save Lives,\" asking residents to further refrain from leaving the home.",
+      "As more people are using local supermarkets rather than those at big stations, she also calls for people to go shopping just once every three days to reduce crowding."
+    ]
+  },
+  {
+    "date": "2020/4/24",
+    "events": [
+      "Tokyo reports 161 new cases, bringing its overall total to 3,733. The speed of growth remains high, although it has dropped compared with earlier in the month."
+    ]
+  },
+  {
+    "date": "2020/4/25",
+    "events": [
+      "Tokyo's \"Stay Home Week to Save Lives,\" a rebranding of Golden Week, begins. The period will run through May 6."
     ]
   },
   {

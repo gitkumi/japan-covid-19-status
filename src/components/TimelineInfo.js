@@ -15,7 +15,7 @@ function TimelineReader({ event }) {
       <p className="text-gray-400 mb-2 text-xs uppercase font-medium">
         { toShortDate(event.date) }
       </p>
-      { event.events.map(event => <p className="text-gray-400 text-sm">{ event }</p>)}
+      { event.events.map(event => <p className="text-gray-400 text-sm mb-2 last:mb-0">{ event }</p>)}
     </div>
   )
 }
