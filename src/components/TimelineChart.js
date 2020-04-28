@@ -44,9 +44,7 @@ function TimelineChart({ events, updateFeatured }) {
           ticks: {
             maxRotation: 0,
             callback: (value, index, dataSet) => {
-              const shouldShow = index === 0 
-              || index === dataSet.length - 1
-              || index % 2 === 0
+              const shouldShow = index === 0 || index % 2 === 0
   
               return shouldShow ? value.replace('2020/', '') : ''
             },
