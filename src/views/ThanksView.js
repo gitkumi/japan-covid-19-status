@@ -29,7 +29,7 @@ function ThanksView() {
       <ul className="text-gray-400 text-sm list-disc">
         {sources.map(source => {
           return (
-            <li className="mb-6 last:mb-0">
+            <li key={source.title} className="mb-6 last:mb-0">
               <div className="flex">
                 <a href={source.link} target="_blank" rel="noreferrer noopener" className="font-medium mr-2 hover:underline">{ source.title}</a>
                 <span className="text-gray-500">{source.author}</span>

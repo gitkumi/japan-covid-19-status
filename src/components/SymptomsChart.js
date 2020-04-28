@@ -34,10 +34,7 @@ const symptomsChartOptions = {
         ticks: {
           maxRotation: 0,
           callback: (value, index) => {
-            const currentDate = new Date(value)
-            currentDate.toLocaleDateString('en-US')
-
-            return index % 2 !== 1 ? value.replace('2020/', '') : ''
+            return index % 3 === 0 ? value.replace('2020/', '') : ''
           },
           fontColor: '#a0aec0'
         },

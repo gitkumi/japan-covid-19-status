@@ -48,11 +48,12 @@ export const summaryChartOptions = {
         },
         ticks: {
           maxRotation: 0,
-          callback: (value, index) => {
-            const currentDate = new Date(value)
-            currentDate.toLocaleDateString('en-US')
+          callback: (value, index, dataSet) => {
+            const shouldShow = index === 0 
+            || index === dataSet.length - 1
+            || index % 2 === 0
 
-            return index % 2 !== 1 ? value.replace('2020/', '') : ''
+            return shouldShow ? value.replace('2020/', '') : ''
           },
           fontColor: '#a0aec0'
         },

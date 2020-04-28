@@ -14,8 +14,6 @@ function getColor(key) {
 function NumberSummary({ summary, cases }) {
   const percentage = getPercentage(cases, summary.value)
 
-  console.log(summary)
-
   return (
     <article className="flex flex-col mt-4 mr-4 lg:mr-12 last:mr-0">
       <span className="uppercase text-sm font-medium tracking-wider">
