@@ -11,7 +11,7 @@ function TopNumbers({ total }) {
     })
 
   return (
-    <div className="flex flex-wrap justify-center mb-6 -mt-4">
+    <div className="flex overflow-auto md:justify-center mb-6">
       {summaries.map(summary => (
         <NumberSummary summary={summary} key={summary.key} cases={total.cases} />
       ))}

@@ -81,7 +81,7 @@ function TimelineChart({ events, updateFeatured }) {
             label: 'Events',
             backgroundColor: '#63b3ed',
             data: eventData,
-            pointRadius: eventData.map(val => val !== 0 ? 3 : 0),
+            pointRadius: eventData.map(val => val !== 0 ? 2 : 0),
             hitRadius: eventData.map(val => val !== 0 ? 1 : 0),
             hoverRadius: eventData.map(val => val !== 0 ? 4 : 0),
           },

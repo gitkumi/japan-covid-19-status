@@ -31,7 +31,7 @@ function ThanksView() {
           return (
             <li key={source.title} className="mb-6 last:mb-0">
               <div className="flex">
-                <a href={source.link} target="_blank" rel="noreferrer noopener" className="font-medium mr-2 hover:underline">{ source.title}</a>
+                <a href={source.link} target="_blank" rel="noreferrer noopener" className="font-medium mr-2 underline">{ source.title}</a>
                 <span className="text-gray-500">{source.author}</span>
               </div>
               <p>

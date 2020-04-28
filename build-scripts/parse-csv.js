@@ -37,16 +37,28 @@ function getGenerationEnglishName(string) {
 fse.createReadStream('./raw-data/summary.csv')
   .pipe(csv())
   .on('data', (data) => {
+    const latestCase = data['PCR検査陽性者']
+
+    const previousSummary = summary[summary.length - 1]
+    const previousCase = !!previousSummary ? previousSummary.data.cases : 0
+    const newCases = latestCase - previousCase
+
+    const recovered = data['退院者']
+    const deaths = data['死亡者']
+
+    const active = Number(latestCase) - Number(recovered) - Number(deaths) - Number(newCases)
+
     const newEntry = {
       date: `${data['年']}/${data['月']}/${data['日']}`,
       data: {
-        cases: data['PCR検査陽性者'],
+        cases: latestCase,
         cases_with_symptoms: data['有症状者'],
-        recovered: data['退院者'],
         serious: data['人工呼吸器又は集中治療室に入院している者'],
-        active: data['PCR検査陽性者'] - data['退院者'] - data['人工呼吸器又は集中治療室に入院している者'],
-        deaths: data['死亡者'],
         tested: data['PCR検査実施人数'],
+        recovered: recovered,
+        active: active < 0 ? 0 : active,
+        deaths: deaths,
+        new: newCases 
       }
     }
     summary.push(newEntry)
@@ -87,10 +99,10 @@ fse.createReadStream('./raw-data/prefectures.csv')
       date: `${data['年']}/${data['月']}/${data['日']}`,
       data: {
         prefecture: prefectureName,
-        cases: data['患者数（2020年3月28日からは感染者数）'],
-        active: data['現在は入院等'],
-        recovered: data['退院者'],
-        deaths: data['死亡者']
+        cases: data['患者数（2020年3月28日からは感染者数）'] === '-' ? 0 : data['患者数（2020年3月28日からは感染者数）'],
+        active: data['現在は入院等'] === '-' ? 0 : data['現在は入院等'],
+        recovered: data['退院者'] === '-' ? 0 : data['退院者'],
+        deaths: data['死亡者'] === '-' ? 0 : data['死亡者']
       }
     }
     prefectures.push(newEntry)

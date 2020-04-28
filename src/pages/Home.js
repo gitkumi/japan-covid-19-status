@@ -57,7 +57,7 @@ function Home() {
         </div>
 
         <span className="text-xs text-gray-500">
-          Made by <a className="underline" href="https://tkmi.dev/" target="_blank" rel="noreferrer noopener">me</a>.
+          Made by <a className="underline" href="https://tkmi.dev/" target="_blank" rel="noreferrer noopener">me</a>. Source code available <a className="underline" href="https://github.com/gitkumi/japan-covid-19-status" target="_blank" rel="noreferrer noopener">here</a>. Created with React.js, Chart.js, Tailwind, and the other 800+ Node.js libraries.
         </span>
       </div>
     </main>

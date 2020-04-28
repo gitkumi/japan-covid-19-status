@@ -31,11 +31,19 @@ function SummaryView() {
     }
   })
 
+  const newCases = SUMMARY_DATA.map(summary => {
+    return {
+      label: summary.date,
+      value: summary.data.new
+    }
+  })
+
   const timeline = {
     cases: cases,
     active: active,
     recovered: recovered,
-    deaths:  deaths
+    deaths:  deaths,
+    new: newCases
   }
 
   return (
