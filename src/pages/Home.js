@@ -9,8 +9,12 @@ import MapView from 'views/MapView'
 import SymptomsView from 'views/SymptomsView'
 import TimelineView from 'views/TimelineView'
 import ThanksView from 'views/ThanksView'
+import SUMMARY_DATA from 'data/summary.json'
+import { toLongDate } from 'utils/helpers'
 
 function Home() {
+  const lastUpdated = toLongDate(SUMMARY_DATA[SUMMARY_DATA.length - 1].date)
+
   return (
     <main className="bg-gray-800 text-gray-400 text-lg">
       <MetaTags>
@@ -20,7 +24,7 @@ function Home() {
       </MetaTags>
 
       <div className="container mx-auto p-4">
-        <h1 className="font-medium text-gray-200 text-3xl mb-6 text-center">Japan COVID-19 Status</h1>
+        <h1 className="font-medium text-gray-200 text-2xl mb-6 text-center">Japan COVID-19 Status as of { lastUpdated }</h1>
         <TitleView />
 
         <div className="mb-6 flex flex-col lg:flex-row">
