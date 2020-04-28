@@ -1,8 +1,60 @@
 import React from 'react'
 import Chart from 'chart.js'
-import { symptomsChartOptions } from 'constants/chart-options'
+import { formatNumber } from 'utils/helpers'
 
-function SummaryChart({ symptoms }) {
+const symptomsChartOptions = {
+  tooltips: {
+    mode: 'index',
+    intersect: false,
+    itemSort: (arr) => arr,
+    callbacks: {
+      label: (tooltipItem)=> {
+      const categories = new Map()
+        .set(0, 'Asymptomatic')
+        .set(1, 'Symptomatic')
+
+      const category = categories.get(tooltipItem.datasetIndex)
+      return `${category}: ${formatNumber(tooltipItem.value)}`
+      }
+    }
+  },
+  hover: {
+    mode: 'index',
+    intersect: false,
+  },
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [
+      {
+        gridLines: {
+          display: false,
+        },
+        ticks: {
+          maxRotation: 0,
+          callback: (value, index) => {
+            const currentDate = new Date(value)
+            currentDate.toLocaleDateString('en-US')
+
+            return index % 2 !== 1 ? value.replace('2020/', '') : ''
+          },
+          fontColor: '#a0aec0'
+        },
+      },
+    ],
+    yAxes: [
+      {
+        ticks: {
+          callback: value => formatNumber(value),
+          fontColor: '#a0aec0'
+        },
+      },
+    ],
+  },
+}
+
+function SymptomsChart({ symptoms }) {
   const chartRef = React.useRef(null)
 
   React.useEffect(() => {
@@ -38,4 +90,4 @@ function SummaryChart({ symptoms }) {
   )
 }
 
-export default SummaryChart
+export default SymptomsChart

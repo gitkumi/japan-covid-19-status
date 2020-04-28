@@ -1,6 +1,55 @@
 import React from 'react'
 import Chart from 'chart.js'
-import { demographyChartOptions } from 'constants/chart-options'
+import { formatNumber } from 'utils/helpers'
+
+const demographyChartOptions = {
+  tooltips: {
+    mode: 'index',
+    intersect: false,
+    itemSort: (arr) => arr,
+    callbacks: {
+      label: (tooltipItem) => {
+        const categories = new Map()
+          .set(0, 'Infected')
+          .set(1, 'Serious')
+          .set(2, 'Deaths')
+
+        const category = categories.get(tooltipItem.datasetIndex)
+        return `${category}: ${formatNumber(tooltipItem.value)}`
+      }
+    }
+  },
+  hover: {
+    mode: 'index',
+    intersect: false,
+  },
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [
+      {
+        stacked: true,
+        gridLines: {
+          display: false,
+        },
+        ticks: {
+          callback: value => formatNumber(value),
+          fontColor: '#a0aec0'
+        },
+      },
+    ],
+    yAxes: [
+      {
+        stacked: true,
+        ticks: {
+          callback: value => value,
+          fontColor: '#a0aec0'
+        },
+      },
+    ],
+  },
+}
 
 function DemographyChart({ demography }) {
   const chartRef = React.useRef(null)

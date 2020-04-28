@@ -12,3 +12,4 @@
 https://observablehq.com/@yurivish/quarantine-now
 https://toyokeizai.net/sp/visual/tko/covid19/en.html
 https://github.com/CSSEGISandData/COVID-19
+https://www.nippon.com/en/japan-data/h00657coronavirus-cases-in-japan-by-prefecture.html
