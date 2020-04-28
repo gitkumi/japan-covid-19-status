@@ -4,7 +4,6 @@ import { formatNumber } from 'utils/helpers'
 
 function SummaryChart({ timeline }) {
   const japanActive = timeline.active
-  const japanNew = timeline.new
   const japanRecovered = timeline.recovered
   const japanDeaths = timeline.deaths
 
@@ -19,8 +18,7 @@ function SummaryChart({ timeline }) {
           const deaths = data.datasets[items[0].datasetIndex].data[items[0].index]
           const recovered = data.datasets[items[1].datasetIndex].data[items[0].index]
           const active = data.datasets[items[2].datasetIndex].data[items[0].index]
-          const newCases = data.datasets[items[3].datasetIndex].data[items[0].index]
-          const cases = Number(deaths) + Number(recovered) + Number(active) + Number(newCases)
+          const cases = Number(deaths) + Number(recovered) + Number(active)
   
           return `${date} - Cases: ${formatNumber(cases)}`
         },
@@ -104,14 +102,6 @@ function SummaryChart({ timeline }) {
             pointRadius: 0,
             hitRadius: 5,
             data: japanActive.map(t => t.value),
-          },
-          {
-            label: 'New',
-            backgroundColor: '#ed8936',
-            borderColor: '#ed8936',
-            pointRadius: 0,
-            hitRadius: 5,
-            data: japanNew.map(t => t.value),
           },
         ],
       },

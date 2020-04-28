@@ -46,7 +46,7 @@ fse.createReadStream('./raw-data/summary.csv')
     const recovered = data['退院者']
     const deaths = data['死亡者']
 
-    const active = Number(latestCase) - Number(recovered) - Number(deaths) - Number(newCases)
+    const active = Number(latestCase) - Number(recovered) - Number(deaths)
 
     const newEntry = {
       date: `${data['年']}/${data['月']}/${data['日']}`,
