@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/japan-covid-19-status/static/css/main.5ca456a6.chunk.css",
-    "main.js": "/japan-covid-19-status/static/js/main.1f3d354f.chunk.js",
-    "main.js.map": "/japan-covid-19-status/static/js/main.1f3d354f.chunk.js.map",
+    "main.js": "/japan-covid-19-status/static/js/main.ed23d117.chunk.js",
+    "main.js.map": "/japan-covid-19-status/static/js/main.ed23d117.chunk.js.map",
     "runtime-main.js": "/japan-covid-19-status/static/js/runtime-main.779697e9.js",
     "runtime-main.js.map": "/japan-covid-19-status/static/js/runtime-main.779697e9.js.map",
     "static/js/2.ddb37ade.chunk.js": "/japan-covid-19-status/static/js/2.ddb37ade.chunk.js",
     "static/js/2.ddb37ade.chunk.js.map": "/japan-covid-19-status/static/js/2.ddb37ade.chunk.js.map",
     "index.html": "/japan-covid-19-status/index.html",
-    "precache-manifest.a502d7c228ae8c8670dd40df73c90f4e.js": "/japan-covid-19-status/precache-manifest.a502d7c228ae8c8670dd40df73c90f4e.js",
+    "precache-manifest.b13e9b769dfc63367b9c9add24877e2f.js": "/japan-covid-19-status/precache-manifest.b13e9b769dfc63367b9c9add24877e2f.js",
     "service-worker.js": "/japan-covid-19-status/service-worker.js",
     "static/css/main.5ca456a6.chunk.css.map": "/japan-covid-19-status/static/css/main.5ca456a6.chunk.css.map",
     "static/js/2.ddb37ade.chunk.js.LICENSE.txt": "/japan-covid-19-status/static/js/2.ddb37ade.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.779697e9.js",
     "static/js/2.ddb37ade.chunk.js",
     "static/css/main.5ca456a6.chunk.css",
-    "static/js/main.1f3d354f.chunk.js"
+    "static/js/main.ed23d117.chunk.js"
   ]
 }
