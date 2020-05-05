@@ -268,5 +268,53 @@
     "events": [
       "Tokyo reports 72 new cases, marking the first time the daily figure has been less than 100 since April 13."
     ]
+  },
+  {
+    "date": "2020/4/27",
+    "events": [
+      "Tokyo reports 39 new cases, bringing its overall total to 3,947. It is the second successive day that fewer than 100 cases have been reported in the metropolis, although Monday's figures have a tendency to be lower due to reduced numbers of tests on Sunday."
+    ]
+  },
+  {
+    "date": "2020/4/28",
+    "events": [
+      "Tokyo reports 112 new cases, bringing its overall total to 4,059."
+    ]
+  },
+  {
+    "date": "2020/4/29",
+    "events": [
+      "Prime Minister Abe suggests the state of emergency will be extended beyond May 6, saying that as the number of infections continue to rise, it is difficult to say that the outbreak is over. He later says that he is considering a proposal to shift the start of the school year from April to September, as one among many options."
+    ]
+  },
+  {
+    "date": "2020/4/30",
+    "events": [
+      "The supplementary budget including ¥100,000 payments to all residents is enacted in the Diet. It amounts to ¥25.7 trillion, of which ¥12.9 trillion is earmarked for the payments. This brings Japanese government bond issuance to a record ¥58.2 trillion in fiscal 2020, lifting the bond dependency ratio to 45.5%."
+    ]
+  },
+  {
+    "date": "2020/4/30",
+    "events": [
+      "The supplementary budget including ¥100,000 payments to all residents is enacted in the Diet. It amounts to ¥25.7 trillion, of which ¥12.9 trillion is earmarked for the payments. This brings Japanese government bond issuance to a record ¥58.2 trillion in fiscal 2020, lifting the bond dependency ratio to 45.5%."
+    ]
+  },
+  {
+    "date": "2020/5/1",
+    "events": [
+      "Tokyo reports another 165 cases, bringing its total to 4,317. This follows two days in which there were fewer than 50 new cases. Prime Minister Abe Shinzō states plans to extend the nationwide state of emergency for around a month, with the announcement to be made by May 6."
+    ]
+  },
+  {
+    "date": "2020/5/2",
+    "events": [
+      "Tokyo reports 160 new cases, reaching a total of 4,477. The number of nationwide fatalities (excluding cruise ship passengers) reaches 500,  and Tokyo is the prefecture with the most deaths at 141, followed by Osaka with 46, Hokkaidō with 40, and Kanagawa with 38. Tokyo's highest daily total of 15 deaths came on May 1."
+    ]
+  },
+  {
+    "date": "2020/5/4",
+    "events": [
+      "Tokyo reports 87 new cases, bringing its total to 4,654. Hokkaidō reports 31 new cases for the day, with 29 of them in Sapporo, registering a new daily high for the prefectural capital. The government decides to extend to May 31 the nationwide state of emergency that had been due to expire on May 6."
+    ]
   }
 ]
